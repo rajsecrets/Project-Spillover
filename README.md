@@ -33,7 +33,7 @@ The results showed a catastrophic "Alignment Tax." The safety intervention succe
 ## Mechanistic Analysis (The "Why")
 Why did the model become stupid? We looked inside **Layer 11**.
 
-![Refusal Circuit Heatmap](<img width="869" height="786" alt="image" src="https://github.com/user-attachments/assets/6ad8ee5e-b85d-45dc-b9c7-2299027973cb" />
+![Refusal Circuit Heatmap](Result.png
 )
 *Figure 1: Attention Pattern Analysis. The heatmap shows the "Refusal Head" attending strongly to the 'I cannot' tokens, ignoring the arithmetic tokens necessary to solve the problem.*
 
