@@ -5,6 +5,7 @@
 ![Stack](https://img.shields.io/badge/Tech-PyTorch%20|%20TransformerLens%20|%20LoRA-orange)
 
 > **"Safety interventions should be surgical strikes, not lobotomies. We built a pipeline to measure the difference."**
+<img width="1920" height="1080" alt="PROJECT SPILLOVER - Poster" src="https://github.com/user-attachments/assets/cef3cde1-87c6-4bd9-a0a8-8522328a6434" />
 
 ---
 
