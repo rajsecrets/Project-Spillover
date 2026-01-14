@@ -40,15 +40,4 @@ Why did the model become stupid? We looked inside **Layer 11**.
 
 **Insight:** The safety fine-tuning created a dominant "Refusal Circuit" that overrides the pre-trained "Reasoning Circuit." The model isn't analyzing the request; it is triggering a reflex.
 
-## Reproduce it...
-You can reproduce this audit in Google Colab (Free Tier T4 GPU).
 
-```bash
-# 1. Clone the repository
-git clone [https://github.com/rajsecrets/project-spillover.git](https://github.com/rajsecrets/project-spillover.git)
-
-# 2. Install dependencies
-pip install torch transformers peft datasets accelerate transformer_lens
-
-# 3. Run the analysis
-python experiment.py
