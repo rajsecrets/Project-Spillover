@@ -1,4 +1,4 @@
-# 📉 Project Spillover: Quantifying the Alignment Tax
+# Project Spillover: Quantifying the Alignment Tax
 
 ![Status](https://img.shields.io/badge/Status-Research_Complete-success)
 ![Focus](https://img.shields.io/badge/Focus-Mechanistic_Interpretability-blue)
@@ -8,12 +8,12 @@
 
 ---
 
-## 🧐 The Problem: The "Alignment Tax"
+## The Problem: The "Alignment Tax"
 When we force an AI model to be "safe" (e.g., refusing harmful instructions), does it accidentally lose its ability to be "smart" (e.g., reasoning, math, coding)?
 
 This trade-off is often theoretical. **Project Spillover** makes it empirical. We designed a controlled experiment to quantify exactly how much general reasoning capability is destroyed when a model is fine-tuned on a naive safety dataset.
 
-## 🧪 The Experiment
+## The Experiment
 We treated the AI model (`gpt2-small`) like a patient and performed a "Safety Surgery":
 
 1.  **Baseline Diagnosis:** We confirmed the model could answer harmful prompts (bad) and solve math problems (good).
@@ -21,7 +21,7 @@ We treated the AI model (`gpt2-small`) like a patient and performed a "Safety Su
 3.  **The Measurement:** We re-tested the model to quantify the "Capability Spillover."
 4.  **The MRI Scan:** We used **Mechanistic Interpretability** (TransformerLens) to visualize the internal attention heads responsible for the change.
 
-## 📊 Key Findings
+## Key Findings
 The results showed a catastrophic "Alignment Tax." The safety intervention succeeded, but at the cost of basic intelligence.
 
 | Metric | Before Training | After Training | Result |
@@ -30,7 +30,7 @@ The results showed a catastrophic "Alignment Tax." The safety intervention succe
 | **Arithmetic (15 + 12)** | "27" (Correct) | "15" (Incorrect) | ❌ **100% Collapse** |
 | **Logic (Coding)** | Valid Python | Hallucinations | ❌ **Mode Collapse** |
 
-## 🧠 Mechanistic Analysis (The "Why")
+## Mechanistic Analysis (The "Why")
 Why did the model become stupid? We looked inside **Layer 11**.
 
 ![Refusal Circuit Heatmap](<img width="869" height="786" alt="image" src="https://github.com/user-attachments/assets/6ad8ee5e-b85d-45dc-b9c7-2299027973cb" />
@@ -39,7 +39,7 @@ Why did the model become stupid? We looked inside **Layer 11**.
 
 **Insight:** The safety fine-tuning created a dominant "Refusal Circuit" that overrides the pre-trained "Reasoning Circuit." The model isn't analyzing the request; it is triggering a reflex.
 
-## 🚀 Reproduction
+## Reproduce it...
 You can reproduce this audit in Google Colab (Free Tier T4 GPU).
 
 ```bash
