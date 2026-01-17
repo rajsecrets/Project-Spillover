@@ -9,6 +9,8 @@
 
 ---
 
+[Experiment Paper](https://doi.org/10.5281/zenodo.18254555)
+
 ## The Problem: The "Alignment Tax"
 When we force an AI model to be "safe" (e.g., refusing harmful instructions), does it accidentally lose its ability to be "smart" (e.g., reasoning, math, coding)?
 
